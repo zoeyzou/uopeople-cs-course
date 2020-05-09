@@ -24,3 +24,15 @@ print("is_power(27, 3) returns: ", is_power(27, 3))
 print("is_power(1, 1) returns: ", is_power(1, 1))
 print("is_power(10, 1) returns: ", is_power(10, 1))
 print("is_power(3, 3) returns: ", is_power(3, 3))
+
+
+def cal(degree, unit):
+    if unit == "C":
+        f = (degree * 9 / 5) + 32
+        print(f)
+    else:
+        c = (degree - 32) * 5 / 9  # assume we want to get celcius from fahrenheit
+        print(c)
+
+
+cal(0, "C")
