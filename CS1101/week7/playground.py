@@ -26,3 +26,34 @@ def get_users_info(user_dic):
 
 user_dic = {("Zoey", "Zou"): "likes food", ("Denise", "Tham"): "likes food"}
 print(get_users_info(user_dic))
+
+
+def invert_dict(d):
+    inverse = dict()
+    for key in d:
+        val = d[key]
+        if not isinstance(val, list):
+            val = [
+                d[key]
+            ]  # check if the value is list, if not convert it into list so it can be looped
+
+        for item in val:
+            if item not in inverse:
+                inverse[item] = [key]
+            else:
+                inverse[item].append(key)
+    return inverse
+
+
+my_dict = {
+    "name": "Zoey",
+    "age": 29,
+    "fav_food": ["dumplings", "dim sum", "bbq"],
+    "like_cat": True,
+    "like_game": True,
+}
+
+print("original dictionary", my_dict)
+print("inverted dictionary", invert_dict(my_dict))
+
+print(dict().get("no", "help!"))
