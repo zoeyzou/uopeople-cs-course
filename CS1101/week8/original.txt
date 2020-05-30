@@ -1,0 +1,8 @@
+{
+    "name": "Zoey",
+    "age": 29,
+    "fav_food": ["dumplings", "dim sum", "bbq"],
+    "like_cat": True,
+    "like_game": True,
+    "like_sugar": False
+}

@@ -1,0 +1,1 @@
+{'Zoey': ['name'], 29: ['age'], 'dumplings': ['fav_food'], 'dim sum': ['fav_food'], 'bbq': ['fav_food'], True: ['like_cat', 'like_game', 'enjoy_weekend'], False: ['like_sugar'], 2: ['work_experience'], 'Denise': ['friends'], 'Chloe': ['friends'], 'Fion': ['friends']}
